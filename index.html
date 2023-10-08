@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega de Notas</title>
+    <link rel="stylesheet" href="/styles/Styles.css">
+</head>
+
+<body>
+    <nav class="main-menu">
+            <img class="icono" src="assets/poli.png"/>
+        <div class="list-container">
+            <ul class="list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main-content">
+        <main>
+            <section class="main-section">
+                    <h1 class="main-title">Entrega de Notas</h1>
+                <div class="subjects-container">
+                    <div class="subjects-content">
+                        <label class="subject-label" for="math"> Matematicas:</label>
+                        <input class="subject-input" type="number" id="math" max="5"/>
+            
+                        <label class="subject-label" for="system"> Informatica:</label>
+                        <input class="subject-input" type="number" id="system"/>
+            
+                        <label class="subject-label" for="physical"> Fisica:</label>
+                        <input class="subject-input" type="number" id="physical"/>
+            
+                        <label class="subject-label" for="english"> Ingles:</label>
+                        <input class="subject-input" type="number" id="english"/>
+                    </div>
+                    <div class="result-container">
+                        <img class="poli-content-icon" id="poli-content-icon" src="assets/poli.png">
+                        <div class="main-result" id="main-result">
+                            <img src="assets/cheque.png" class="approved-icon" id="approved-icon">
+                            <img src="assets/cancelar.png" class="not-approved-icon" id="not-approved-icon">
+                            <h2 id="result"><h2/>
+                            <h2 id="message"></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="calc-button" id="sumbutton" type="button" onclick="calc()">CALCULAR</button>
+                </div>
+            </section>
+        </main>
+    
+        <footer>
+            <p>Desarrollado por Andrea Salinas</p>
+        </footer>
+    </div>
+
+</body>
+</html>
+<script src="/js/etc.js"></script>
